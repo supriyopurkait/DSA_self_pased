@@ -15,34 +15,32 @@ Input: n = 23
 Output: 0
 Explanation: 2 and 3, none of them divide 23 evenly.*/
 import java.util.*;
-class Solution
-{
-	int divides_evenly(int N)
-	{
-		int original_Num = N,count=0;
-		
-		while(N!=0)
-		{
-			int digit = N%10;
-			N=N/10;
-			if(digit!=0 && original_Num % digit == 0)
-			{
-				count++;
-			}
-		}
-		return count;
-	}
+
+class Solution {
+
+    int divides_evenly(int N) {
+        int original_Num = N, count = 0;
+
+        while (N != 0) {
+            int digit = N % 10;
+            N = N / 10;
+            if (digit != 0 && original_Num % digit == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
 }
-class Digits_divides_evenly extends Solution
-{
-	public static void main(String []args)
-	{
-		Scanner ob1 = new Scanner(System.in);
-		Digits_divides_evenly ob2 = new Digits_divides_evenly();
-		
-		System.out.println("Enter a number :");
-		int num = ob1.nextInt();
-		int res = ob2.divides_evenly(num);
-		System.out.println("Tolals numbers of digits from entered number which can divides itself:"+res);
-	}
+
+class Digits_divides_evenly extends Solution {
+
+    public static void main(String[] args) {
+        Scanner ob1 = new Scanner(System.in);
+        Digits_divides_evenly ob2 = new Digits_divides_evenly();
+
+        System.out.println("Enter a number :");
+        int num = ob1.nextInt();
+        int res = ob2.divides_evenly(num);
+        System.out.println("Tolals numbers of digits from entered number which can divides itself:" + res);
+    }
 }

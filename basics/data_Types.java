@@ -3,7 +3,7 @@ class Main
 {
 	public static void main(String []args)
 	{
-		Main ob = new Main();
+		palindrom ob = new palindrom();
 		ob.claculate_size(4);
 	}
 	void claculate_size(int value)
