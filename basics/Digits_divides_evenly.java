@@ -42,5 +42,6 @@ class Digits_divides_evenly extends Solution {
         int num = ob1.nextInt();
         int res = ob2.divides_evenly(num);
         System.out.println("Tolals numbers of digits from entered number which can divides itself:" + res);
+        ob1.close();
     }
 }

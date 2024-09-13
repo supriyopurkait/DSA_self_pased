@@ -1,10 +1,11 @@
 
-class Main
+public class Main
 {
 	public static void main(String []args)
 	{
-		palindrom ob = new palindrom();
+		Main ob = new Main();
 		ob.claculate_size(4);
+		ob.clone();
 	}
 	void claculate_size(int value)
 	{

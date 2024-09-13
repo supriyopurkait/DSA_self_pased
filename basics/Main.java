@@ -1,4 +1,4 @@
-
+/*palindrom or not */
 import java.util.*;
 
 class Palindrom {

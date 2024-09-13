@@ -20,6 +20,7 @@ class fibonacci_series {
         System.out.println("enter the nth element position you want to find in the series:");
         int pos = ob1.nextInt();
         ob2.position(pos);
+        ob1.close();
     }
 
     void position(int pos) {
