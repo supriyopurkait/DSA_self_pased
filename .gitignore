@@ -1,2 +1,22 @@
+# Ignore class files
 *.class
-/
+
+# Ignore package files
+*.jar
+*.war
+
+# Ignore Maven and Gradle directories
+/target/
+/build/
+
+# Ignore IDE-specific files
+/.classpath
+/.project
+/.idea
+*.iml
+
+# Ignore logs
+*.log
+
+# Ignore XML files (if they are not needed in version control)
+*.xml

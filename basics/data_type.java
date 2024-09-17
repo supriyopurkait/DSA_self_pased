@@ -1,11 +1,10 @@
 
-public class Main
+public class data_type
 {
 	public static void main(String []args)
 	{
-		Main ob = new Main();
+		data_type ob = new data_type();
 		ob.claculate_size(4);
-		ob.clone();
 	}
 	void claculate_size(int value)
 	{

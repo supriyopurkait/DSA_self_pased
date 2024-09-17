@@ -28,7 +28,7 @@ All the numbers of nums are unique. */
 public class find_missing_number {
 
     public static void main(String args[]) {
-        int[] arr = {1, 0, 3, 5, 4,6};
+        int[] arr = {1, 0, 3, 5, 4, 6};
         solution ob1 = new solution();
         ob1.sol(arr);
     }
