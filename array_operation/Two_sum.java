@@ -5,12 +5,13 @@ public class Two_sum {
         int arr[] = {2, 7, 11, 15};
         int target = 9;
         Solution ob1 = new Solution();  // Use correct class name 'Solution' (uppercase)
-        ob1.sum_num(arr, target);
+        String re = ob1.sum_num(arr, target);
+        System.out.println(re);
     }
 }
 
 class Solution {  // Class name should start with uppercase 'S'
-    void sum_num(int arr[], int target) {
+    String sum_num(int arr[], int target) {
         int[] ans = new int[2];
         ans[0] = ans[1] = -1;
         HashMap<Integer, Integer> mpp = new HashMap<>();
@@ -29,5 +30,6 @@ class Solution {  // Class name should start with uppercase 'S'
         
         // Output the result
         System.out.println("Indices: " + ans[0] + ", " + ans[1]);
+        return ans[0]+" "+ans[1];
     }
 }
