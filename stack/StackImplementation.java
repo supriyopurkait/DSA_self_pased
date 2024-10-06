@@ -52,24 +52,15 @@ public class StackImplementation {
             System.out.println("\n1. Push\n2. Pop\n3. Peek\n4. Display\n5. Exit\nEnter choice:");
             int ch = ob.nextInt();
             switch (ch) {
-                case 1:
-                    ob2.stack_push(sample);
-                    break;
-                case 2:
-                    ob2.stack_pop(sample);
-                    break;
-                case 3:
-                    ob2.stack_peek(sample);
-                    break;
-                case 4:
-                    ob2.stack_display(sample);
-                    break;
-                case 5:
+                case 1 -> ob2.stack_push(sample);
+                case 2 -> ob2.stack_pop(sample);
+                case 3 -> ob2.stack_peek(sample);
+                case 4 -> ob2.stack_display(sample);
+                case 5 -> {
                     System.out.println("Exiting...");
                     System.exit(0);
-                    break;
-                default:
-                    System.out.println("Enter a valid option");
+                }
+                default -> System.out.println("Enter a valid option");
             }
         }
     }
